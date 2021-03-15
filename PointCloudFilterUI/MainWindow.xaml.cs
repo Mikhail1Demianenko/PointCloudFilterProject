@@ -55,7 +55,6 @@ namespace PointCloudFilterWPF
             _pickEvent = pickEvent;
             _resetEvent = resetEvent;
 
-
         }
 
 
