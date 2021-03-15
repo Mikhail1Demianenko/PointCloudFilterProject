@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+	<AddIn Type="Command">
+		<Name>MyFirstRevitPlugin</Name>
+		<FullClassName>MyFirstRevitPlugin.PointCloudFilterExternalCommand</FullClassName>
+		<Text> Hello World Text </Text>
+		<Description> Hello World Description</Description>
+		<VisibilityMode>AlwaysVisible</VisibilityMode>
+		<Assembly>
+			C:\Users\junha\source\repos\MyFirstRevitPlugin\MyFirstRevitPlugin\bin\Debug\MyFirstRevitPlugin.dll
+		</Assembly>
+		<AddInId>502fe383-2648-4e98-adf8-5e6047f9dc34</AddInId>
+		<VendorId>AECTechy</VendorId>
+		<VendorDescription>AECTechy</VendorDescription>
+	</AddIn>
+</RevitAddIns>

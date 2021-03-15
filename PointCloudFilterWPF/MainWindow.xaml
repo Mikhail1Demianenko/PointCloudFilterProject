@@ -1,0 +1,88 @@
+﻿<Window x:Class="PointCloudFilterWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PointCloudFilterWPF"
+        mc:Ignorable="d"
+        Title="Point Cloud Filter" Height="400" Width="210" Background="WhiteSmoke" ResizeMode="NoResize" Topmost="True"
+        SizeToContent="Height">
+
+    <Border BorderThickness ="5">
+
+
+        <Grid>
+            <StackPanel>
+                <Button x:Name="pickPcButton" Margin="5" Grid.Row="1" Click="pickPcButton_Click_1">Pick PC</Button>
+                <Button x:Name="pickFaceButton" Margin="5" Grid.Row="2" Click="pickFaceButton_Click_1">Pick Face</Button>
+                <Button x:Name="resetViewButton" Margin="5" Grid.Row="3" Click="resetViewButton_Click_1">ResetView</Button>
+                
+                <TextBlock Margin="20 5 20 0" HorizontalAlignment="Center"> Average Distance, mm:</TextBlock>
+                <Label x:Name="distLabel" Grid.Column="3" Grid.Row="4" VerticalAlignment="Center" HorizontalAlignment="Center">0</Label>
+                <Expander Header="Filter Settings">
+                    <GroupBox Margin="5 0 10 5">
+                        <StackPanel>
+                            <TextBlock>Average distance, mm:</TextBlock>
+                            <TextBox x:Name="avgDist" Text="1" Grid.Row="1" Grid.Column="3" Margin="7" VerticalAlignment="Center" Height="20" PreviewTextInput="avgDist_PreviewTextInput" LostFocus="avgDist_LostFocus"/>
+                            <TextBlock>Number of Points:</TextBlock>
+                            <TextBox x:Name="numPoints" Text="9999999" Grid.Row="2" Grid.Column="3" Margin="7" VerticalAlignment="Center" Height="20" PreviewTextInput="numPoints_PreviewTextInput" LostFocus="numPoints_LostFocus"/>
+                            <TextBlock>Neglect Farther</TextBlock>
+                            <TextBox x:Name="neglectFarther" Text="1000" Grid.Row="3" Grid.Column="3" Margin="7" VerticalAlignment="Center" Height="20" PreviewTextInput="neglectFarther_PreviewTextInput" LostFocus="neglectFarther_LostFocus"/>
+                        </StackPanel>
+                    </GroupBox>
+                </Expander>
+            </StackPanel>
+        </Grid>
+        
+        
+        <!--
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.8*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="0.25*"/>
+                <ColumnDefinition Width="0.7*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <Button x:Name="pickPcButton" Margin="5" Grid.Row="1" Click="pickPcButton_Click_1">Pick PC</Button>
+            <Button x:Name="pickFaceButton" Margin="5" Grid.Row="2" Click="pickFaceButton_Click_1">Pick Face</Button>
+            <Button x:Name="resetViewButton" Margin="5" Grid.Row="3" Click="resetViewButton_Click_1">ResetView</Button>
+
+
+
+
+            <GroupBox Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="3" Grid.RowSpan="4" Margin="0 15 0 0">
+                `
+                <GroupBox.Header>Filter settings</GroupBox.Header>
+
+            </GroupBox>
+            <Label Grid.Row="1" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Right" Content="Average distance, mm:"/>
+            <Label Grid.Row="2" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Right" Content="Number of points:"/>
+            <Label Grid.Row="3" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Right" Content="Neglect farther, mm:"/>
+
+
+
+            <Image ToolTip="Average distance among points" Source="Icon/unnamed.png" Width="15" Grid.Column="2" Grid.Row="1" Cursor="Hand"/>
+            <Image ToolTip="number of points to pass the filter in range between 1 and 999999" Source="Icon/unnamed.png" Width="15" Grid.Column="2" Grid.Row="2" Cursor="Hand"></Image>
+            <Image ToolTip="Neglect points that are more than this distance away from the surface. Points farther than this will not affect average distance calculation." Source="Icon/unnamed.png" Width="15" Grid.Column="2" Grid.Row="3" Cursor="Hand"/>
+
+
+            <TextBox x:Name="avgDist" Text="1" Grid.Row="1" Grid.Column="3" Margin="7" VerticalAlignment="Center" Height="20" PreviewTextInput="avgDist_PreviewTextInput" LostFocus="avgDist_LostFocus"/>
+            <TextBox x:Name="numPoints" Text="9999999" Grid.Row="2" Grid.Column="3" Margin="7" VerticalAlignment="Center" Height="20" PreviewTextInput="numPoints_PreviewTextInput" LostFocus="numPoints_LostFocus"/>
+            <TextBox x:Name="neglectFarther" Text="1000" Grid.Row="3" Grid.Column="3" Margin="7" VerticalAlignment="Center" Height="20" PreviewTextInput="neglectFarther_PreviewTextInput" LostFocus="neglectFarther_LostFocus"/>
+
+            <Label Grid.Column="1" Grid.Row="4" VerticalAlignment="Center" HorizontalAlignment="Right">Final average distance, mm:</Label>
+            <Label x:Name="distLabel" Grid.Column="3" Grid.Row="4" VerticalAlignment="Center" HorizontalAlignment="Left">0</Label>
+
+
+        </Grid>-->
+
+    </Border>
+</Window>

@@ -1,0 +1,54 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30907.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PointCloudFilterService", "PointCloudFilterService\PointCloudFilterService.csproj", "{3A9DA137-A2D1-42C6-A46B-D95D58D0305D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PointCloudFilterApp", "PointCloudFilterApp\PointCloudFilterApp.csproj", "{E84B1212-205C-4B34-99EA-D520426878EA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PointCloudFilterUI", "PointCloudFilterUI\PointCloudFilterUI.csproj", "{67020FDD-5FFA-42BD-A852-B07CA59E8DEF}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "PointCloudFilterInstaller", "PointCloudFilterInstaller\PointCloudFilterInstaller.vdproj", "{A0F030B6-A92A-44A2-BF75-E6F2C3E676D7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Installer", "Installer\Installer.csproj", "{1779E2F6-3EA3-4564-9E48-FDB8AB691C78}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "InstallerProjects", "InstallerProjects", "{24891734-BC5D-4651-94BE-A7BE4847378C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3A9DA137-A2D1-42C6-A46B-D95D58D0305D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A9DA137-A2D1-42C6-A46B-D95D58D0305D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A9DA137-A2D1-42C6-A46B-D95D58D0305D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A9DA137-A2D1-42C6-A46B-D95D58D0305D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E84B1212-205C-4B34-99EA-D520426878EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E84B1212-205C-4B34-99EA-D520426878EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E84B1212-205C-4B34-99EA-D520426878EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E84B1212-205C-4B34-99EA-D520426878EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{67020FDD-5FFA-42BD-A852-B07CA59E8DEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67020FDD-5FFA-42BD-A852-B07CA59E8DEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67020FDD-5FFA-42BD-A852-B07CA59E8DEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67020FDD-5FFA-42BD-A852-B07CA59E8DEF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A0F030B6-A92A-44A2-BF75-E6F2C3E676D7}.Debug|Any CPU.ActiveCfg = Debug
+		{A0F030B6-A92A-44A2-BF75-E6F2C3E676D7}.Debug|Any CPU.Build.0 = Debug
+		{A0F030B6-A92A-44A2-BF75-E6F2C3E676D7}.Release|Any CPU.ActiveCfg = Release
+		{1779E2F6-3EA3-4564-9E48-FDB8AB691C78}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1779E2F6-3EA3-4564-9E48-FDB8AB691C78}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1779E2F6-3EA3-4564-9E48-FDB8AB691C78}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1779E2F6-3EA3-4564-9E48-FDB8AB691C78}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A0F030B6-A92A-44A2-BF75-E6F2C3E676D7} = {24891734-BC5D-4651-94BE-A7BE4847378C}
+		{1779E2F6-3EA3-4564-9E48-FDB8AB691C78} = {24891734-BC5D-4651-94BE-A7BE4847378C}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CDC2492E-51C4-45CB-BCDF-0573A3DD377F}
+	EndGlobalSection
+EndGlobal
